@@ -5,3 +5,35 @@
   font-weight: normal;
   font-style: normal;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 3px solid black;
+  padding: 32px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  .title {
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #44494e;
+  }
+  .row {
+    display: flex;
+    gap: 100px;
+    .left, .right {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  label {
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #44494e; 
+  }
+  input {
+    width: 100%;
+  }
+}
